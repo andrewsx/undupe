@@ -14,12 +14,9 @@ and preprocessing in a natural language processing project and includes the foll
     - Block Filter
     - Loop Filter
 
+## Installation
 
-
-
-##Installation
-
-To install this package using pip:
+To install this [package](https://pypi.org/project/UnDupe/) using pip:
 
 ```bash
  $ pip install undupe
