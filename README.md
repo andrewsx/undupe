@@ -1,4 +1,4 @@
-# DeDupe
+# UnDupe
 
 This is a tool to remove duplicate text with a focus on e-mails. It provides a starting point for data cleaning
 and preprocessing in a natural language processing project and includes the following components:
@@ -22,7 +22,7 @@ and preprocessing in a natural language processing project and includes the foll
 To install this package using pip:
 
 ```bash
- $ pip install dedupe
+ $ pip install undupe
 ```
 
 ## Usage
@@ -32,7 +32,7 @@ To install this package using pip:
 The preprocess function consists of a chain of function calls to remove unwanted tokens.
 
 ```python
-from dedupe.preprocessing import preprocess_text
+from undupe.preprocessing import preprocess_text
 
 INPUT_FILE_PATH = r'' # Input text file to preprocess, delimited by new lines
 OUTPUT_FILE_PATH = r'' # Output preprocessed file
@@ -62,7 +62,7 @@ because of the thread like nature of emails whereby the first and last emails in
 
 This function takes either a preprocessed input file path or an unpreprocessed input file path, or both. 
 ```python
-from dedupe.preprocessing import remove_duplicates
+from undupe.preprocessing import remove_duplicates
 
 remove_duplicates.block_filtering(r'PREPROCESSED_FILE_PATH',
                                    r'UNPROCESSED_FILE_PATH')
@@ -77,7 +77,7 @@ This function takes either a preprocessed input file path, an unpreprocessed inp
 if some state was stored.
 
 ```python
-from dedupe.preprocessing import remove_duplicates
+from undupe.preprocessing import remove_duplicates
 
 remove_duplicates.loop_filtering(r'PREPROCESSED_FILE_PATH',
                                   r'UNPROCESSED_FILE_PATH')
